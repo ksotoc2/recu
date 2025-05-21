@@ -7,7 +7,7 @@ def lista_libros(request):
     libros = Libro.objects.all()
     return render(request, 'libros/lista_libros.html', {'libros': libros})
 
-def detalle_libro(request):
+def detalle_libro(request, id):
     libro = get_object_or_404(Libro, id=id)
     return render(request, 'libros/detalle_libro.html', {'libro': libro})
 

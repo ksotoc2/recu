@@ -9,7 +9,7 @@
     {% for libro in libros %}
         <li>
             {{libro.titulo}} - {{libro.autor.user.username}} - ({{ libro.publicado }})
-            
+            <a href=" {% url "detalle_libro" libro.id %} ">Ver</a>
         </li>
 
     {% endfor %}
