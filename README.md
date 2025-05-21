@@ -46,11 +46,6 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-> Si el archivo `requirements.txt` aún no existe, puedes generarlo con:
-
-```bash
-pip freeze > requirements.txt
-```
 
 ---
 
