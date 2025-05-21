@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block titulo %}Listado Libros{% endblock %}
+
+{% block contenido %}
+
+<h2>Libros disponibles</h2>
+<ul>
+    {% for libro in libros %}
+        <li>
+            {{libro.titulo}} - {{libro.autor.user.username}} - ({{ libro.publicado }})
+            
+        </li>
+
+    {% endfor %}
+</ul>
+
+{% endblock contenido %}

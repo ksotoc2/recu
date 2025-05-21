@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block titulo %}Nuevo Libro{% endblock titulo %}
+
+{% block contenido %}
+
+<h2>Registar nuevo Libro</h2>
+<form method="post">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <button type="submit">Guardar</button>
+</form>
+
+{% endblock contenido %}

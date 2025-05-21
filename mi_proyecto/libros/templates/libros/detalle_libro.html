@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block titulo %}Detalle{% endblock titulo %} 
+
+{% block contenido %}
+
+<h2> {{libro.titulo}} </h2>
+<p>Autor: {{libro.autor.user.username}} </p>
+<p>Nacionalidad: {{libro.autor.nacionalidad}} </p>
+<p>Publicado: {{libro.publicado}} </p>
+
+{% endblock contenido %}
