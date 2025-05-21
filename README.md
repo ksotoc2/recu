@@ -16,5 +16,5 @@ Este es un proyecto desarrollado con Django. Aquí se describen los pasos para c
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/TU_USUARIO/NOMBRE_DEL_REPO.git
-cd NOMBRE_DEL_REPO
+git clone https://github.com/ksotoc2/recu.git
+cd recu
